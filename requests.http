@@ -1,0 +1,10 @@
+GET http://localhost:8081/api/documents/search?search=test
+
+###
+
+POST http://localhost:8081/api/documents
+Content-Type: application/json
+
+{
+  "content": "hello semantic search"
+}
