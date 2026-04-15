@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/semantic_db
+    url: jdbc:postgresql://localhost:5415/semantic_db
     username: postgres
     password: postgres
 
