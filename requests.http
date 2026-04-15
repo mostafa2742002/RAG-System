@@ -1,4 +1,4 @@
-GET http://localhost:8081/api/documents/search?search=test
+GET http://localhost:8081/api/documents/search?search=how to secure backend api
 
 ###
 
@@ -6,5 +6,5 @@ POST http://localhost:8081/api/documents
 Content-Type: application/json
 
 {
-  "content": "hello semantic search"
+  "content": "PostgreSQL supports ACID transactions"
 }

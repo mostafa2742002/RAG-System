@@ -3,6 +3,7 @@ package com.mostafa.semantic.search.service;
 import java.util.List;
 
 import org.springframework.ai.document.Document;
+import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +22,11 @@ public class DocumentService {
     }
 
     public List<Document> searchDocuments(String query) {
-        return vectorStore.similaritySearch(query);
+        return vectorStore.similaritySearch(
+            SearchRequest.builder()
+                .query(query)
+                .topK(1)
+                .build()
+        );
     }
 }
