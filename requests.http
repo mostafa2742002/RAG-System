@@ -15,3 +15,6 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8081/api/documents/search?search=how to secure stateless apis with token
+
+###
+GET http://localhost:8081/api/rag/ask?q=how does jwt authentication work in spring boot
